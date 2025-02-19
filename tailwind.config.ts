@@ -9,8 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        peach: '#c91d1c',
+        honey: '#F5C156',
+        skyblue: '#7AC6E6',
+        charcoal: '#010001',
+        purple: '#B25AD8',
+      },
+      boxShadow: {
+        'bottom-dark': '0 8px 0px -1px rgba(0, 0, 0, 0.9)',
       },
     },
   },
