@@ -2,8 +2,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <header className='w-full h-1/6 flex-1 p-5'>
-        <div className='flex flex-row justify-between items-center'>
+    <header className='w-screen h-1/6 flex-1 p-5'>
+        <div className='w-full flex flex-row justify-between items-center'>
             <div className='uppercase'>
                 <h1 className='text-5xl '>BITE<span className='font-[Mentimun] text-4xl text-peach stroke-2'>Joy</span></h1>
             </div>
