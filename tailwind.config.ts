@@ -16,9 +16,28 @@ export default {
         purple: '#B25AD8',
       },
       boxShadow: {
-        'bottom-dark': '0 8px 0px -1px rgba(0, 0, 0, 0.9)',
+        'bottom-dark': '0 7px 0px -1px rgba(0, 0, 0, 0.9)',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }: any) {
+      const newUtilities = {
+        '.stroke-1': {
+          '-webkit-text-stroke-width': '2px',
+        },
+        '.stroke-2': {
+          '-webkit-text-stroke-width': '4px',
+        },
+        '.stroke-black': {
+          '-webkit-text-stroke-color': '#000',
+        },
+        '.stroke-white': {
+          '-webkit-text-stroke-color': '#fff',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 } satisfies Config;

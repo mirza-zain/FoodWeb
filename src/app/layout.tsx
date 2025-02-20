@@ -25,9 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+          rel="stylesheet"/>
+        </head>
       <body
-        className={"w-full h-full p-0 m-0 flex bg-honey text-charcoal font-[Realce] " + `${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={"w-screen h-screen p-0 m-0 flex flex-col bg-honey text-charcoal font-[Realce] " + `${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         {children}
       </body>
